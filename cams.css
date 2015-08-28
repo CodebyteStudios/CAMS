@@ -1,0 +1,122 @@
+
+.cams-highlight {
+	position: absolute;
+	background-color: rgba(0, 0, 255, 0.25);
+}
+
+.cams-highlight-border {
+	position: absolute;
+	border: 2px solid blue;
+	box-sizing: border-box;
+}
+
+.cams-editor {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 256px;
+	height: 100%;
+	border-right: 1px solid black;
+	z-index: 999999;
+	opacity: 0.1;
+}
+
+.cams-editor:hover {
+	opacity: 1;
+}
+
+.cams-hierarchy {
+	width: 100%;
+	height: 50%;
+	background-color: #a9a9a9;
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+}
+
+.cams-hierarchy-label {
+	display: block;
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: grey;
+	box-sizing: border-box;
+	cursor: default;
+	border-bottom: 1px solid black;
+	font-family: helvetica;
+}
+
+.cams-hierarchy-label.top-border {
+	border-top: 1px solid black;
+}
+
+.cams-hierarchy-button {
+	display: block;
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	box-sizing: border-box;
+	padding-left: 15px;
+	cursor: pointer;
+	font-family: helvetica;
+}
+
+.cams-hierarchy-button:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cams-hierarchy-button.selected {
+	background-color: rgba(0, 0, 255, 0.25);
+}
+
+.cams-attributes {
+	width: 100%;
+	height: 50%;
+	background-color: #7f7f7f;
+}
+
+.cams-attributes-label {
+	display: block;
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #565656;
+	box-sizing: border-box;
+	cursor: default;
+	border-bottom: 1px solid black;
+	margin-bottom: 4px;
+	font-family: helvetica;
+}
+
+.cams-attributes-input {
+	display: block;
+	clear: both;
+	float: left;
+	width: calc(100% - 16px);
+	margin: 4px 8px 4px 8px;
+	height: 32px;
+	line-height: 32px;
+	box-sizing: border-box;
+	padding-left: 4px;
+}
+
+.cams-attributes-textarea {
+	display: block;
+	clear: both;
+	float: left;
+	width: calc(100% - 16px);
+	margin: 4px 8px 4px 8px;
+	height: calc(50% - 16px);
+	box-sizing: border-box;
+}

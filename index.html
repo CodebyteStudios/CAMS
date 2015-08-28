@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="cams.js"></script>
+	<link href="cams.css" type="text/css" rel="stylesheet"/>
+	<script>
+		window.onload = function() {
+			CAMS.setup();
+		}
+	</script>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		html, body {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.main {
+			width: 500px;
+			height: auto;
+			margin: 0 auto;
+			background-color: #969696;
+		}
+
+		.image {
+			width: 100%;
+			height: 500px;
+			display: block;
+		}
+
+		.content {
+			width: 100%;
+			height: 100px;
+			padding: 16px;
+			box-sizing: border-box;
+			overflow-y: auto;
+			font-family: helvetica;
+		}
+
+		.links {
+			display: table;
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		.link {
+			display: table-cell;
+			width: 33.33333%;
+			height: 100%;
+			vertical-align: middle;
+			text-decoration: none;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: helvetica;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<img class="cams-image image" style="width: 100%;" src="http://www.newton.ac.uk/files/covers/968361.jpg"/>
+		<div class="cams-text content">Hello world! This is a simple test :)</div>
+		<div class="links">
+			<a class="cams-link link" href="http://www.google.com">Google</a>
+			<a class="cams-link link" href="http://www.yahoo.com">Yahoo</a>
+			<a class="cams-link link" href="http://www.bing.com">Bing</a>
+		</div>
+	</div>
+</body>
+</html>
